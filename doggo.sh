@@ -13,7 +13,7 @@ w > current_state
 cline=$(wc -l < current_state)
 if [ "$oline" -lt "$cline" ]; then
         echo another user logged on | write $1 $2
-        rm ./initial_state current_state #you can add doggo here to commit suicide
+        rm initial_state current_state #you can add doggo here to commit suicide
         break
 elif [ "$oline" -gt "$cline" ]; then
         oline=$cline
@@ -21,7 +21,7 @@ elif [ "$oline" -gt "$cline" ]; then
 fi
 if [ "$cline" -eq 2 ]; then
         #it seems im alone
-        rm ./initial_state current_state #you can add doggo here to commit suicide
+        rm initial_state current_state #you can add doggo here to commit suicide
         break
 fi
 done
