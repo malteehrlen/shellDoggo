@@ -22,5 +22,6 @@ fi
 if [ "$cline" -eq 2 ]; then
         #it seems im alone
         rm ./initial_state current_state #you can add doggo here to commit suicide
+        break
 fi
 done
